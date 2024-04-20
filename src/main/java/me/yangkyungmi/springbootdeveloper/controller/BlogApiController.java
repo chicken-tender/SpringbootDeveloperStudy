@@ -23,7 +23,7 @@ public class BlogApiController {
 
   private final BlogService blogService;
 
-  // HTTP 메서드가 POST일 때 전달받은 URL과 동일하면 메서드로 매핃
+  // HTTP 메서드가 POST일 때 전달받은 URL과 동일하면 메서드로 매핑
   @PostMapping("/api/articles")
   public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request) {
     Article savedArticle = blogService.save(request);

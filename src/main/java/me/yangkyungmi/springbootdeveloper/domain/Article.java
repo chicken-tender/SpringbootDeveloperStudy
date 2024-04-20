@@ -5,11 +5,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import java.time.LocalDateTime;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 @Entity
 @Getter
@@ -27,6 +30,14 @@ public class Article {
 
   @Column(name = "content", nullable = false)
   private String content;
+
+  @CreatedDate // 엔티티가 생성될 때 생성 시간을 created_at 컬럼에 저장
+  @Column(name = "created_at")
+  private LocalDateTime createdAt;
+
+  @LastModifiedDate // 엔티티가 수정될 때 마지막으로 수정된 시간을 updated_at에 저장
+  @Column(name = "updated_at")
+  private LocalDateTime updatedAt;
 
   @Builder
   public Article(String title, String content) {
