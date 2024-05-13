@@ -4,14 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c510912-9b9e-4fe6-8825-a1b825334efa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/TestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+    <list default="true" id="7c510912-9b9e-4fe6-8825-a1b825334efa" name="Changes" comment="  서비스 테스트 코드 작성중">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/jwt/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/jwt/TokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/UserApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/UserViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/dto/AddUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/UserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/config/jwt/JwtFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/config/jwt/TokenProviderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/service/BlogServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/service/BlogServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +37,32 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot-developer" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,12 +72,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "chicken-tender"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chicken-tender&quot;
   }
-}]]></component>
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
@@ -50,12 +85,21 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="1234a9ca-7e70-4a1b-b906-3d02fddb84fb" />
-        <option name="url" value="https://github.com/chicken-tender/SpringbootDeveloper.git" />
+        <option name="url" value="https://github.com/chicken-tender/SpringbootDeveloperStudy.git" />
       </UrlAndAccount>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/6.0.4/4fffcbb7eb4f1e9f1a4c9d3ca60098f7c063fc05/spring-context-6.0.4.jar!/org/springframework/stereotype/Controller.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.0.4/de18e3e75a0e56534d9df5978bd2f43f950e1b4a/spring-web-6.0.4.jar!/org/springframework/web/bind/annotation/RestController.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/build.gradle" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/WebSecurityConfig.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/UserApiController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/BlogService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/signup.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/config/jwt/TokenProviderTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/service/BlogServiceTest.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/corretto-17.0.10-1/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -72,20 +116,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.springboot-developer [:SpringBootDeveloperApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SpringBootDeveloperApplication.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.BlogApiControllerTest.addArticle.executor": "Run",
+    "Gradle.BlogApiControllerTest.executor": "Coverage",
+    "Gradle.BlogApiControllerTest.findAllArticles.executor": "Run",
+    "Gradle.BlogServiceTest.executor": "Run",
+    "Gradle.BlogServiceTest.testDeleteArticle.executor": "Debug",
+    "Gradle.BlogServiceTest.testFindAllArticle.executor": "Run",
+    "Gradle.BlogServiceTest.testSaveArticle.executor": "Run",
+    "Gradle.BlogServiceTest.testUpdateArticle.executor": "Run",
+    "Gradle.JUnitCycleTest.executor": "Run",
+    "Gradle.JUnitTest.junitTest.executor": "Run",
+    "Gradle.TestController3.executor": "Run",
+    "Gradle.TestController3.testGetAllMembers.executor": "Run",
+    "Gradle.TestControllerTest2.executor": "Run",
+    "Gradle.TokenProviderTest.executor": "Run",
+    "Gradle.springboot-developer [:SpringBootDeveloperApplication.main()].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.yangkyungmi.springbootdeveloper.service" />
+      <recent name="me.yangkyungmi.springbootdeveloper.controller" />
+      <recent name="me.yangkyungmi.springbootdeveloper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.BlogServiceTest.testUpdateArticle">
     <configuration name="SpringBootDeveloperApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.yangkyungmi.springbootdeveloper.SpringBootDeveloperApplication" />
       <module name="springboot-developer.main" />
@@ -99,9 +178,109 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BlogServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.yangkyungmi.springbootdeveloper.service.BlogServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="BlogServiceTest.testDeleteArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.yangkyungmi.springbootdeveloper.service.BlogServiceTest.testDeleteArticle&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="BlogServiceTest.testFindAllArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.yangkyungmi.springbootdeveloper.service.BlogServiceTest.testFindAllArticle&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="BlogServiceTest.testUpdateArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.yangkyungmi.springbootdeveloper.service.BlogServiceTest.testUpdateArticle&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BlogServiceTest.testUpdateArticle" />
         <item itemvalue="Application.SpringBootDeveloperApplication" />
+        <item itemvalue="Gradle.BlogServiceTest.testDeleteArticle" />
+        <item itemvalue="Gradle.BlogServiceTest" />
+        <item itemvalue="Gradle.BlogServiceTest.testFindAllArticle" />
       </list>
     </recent_temporary>
   </component>
@@ -121,6 +300,51 @@
       <option name="presentableId" value="Default" />
       <updated>1709638616408</updated>
     </task>
+    <task id="LOCAL-00001" summary="03장 스프링부트 계층 이해하기">
+      <option name="closed" value="true" />
+      <created>1710576685739</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710576685740</updated>
+    </task>
+    <task id="LOCAL-00002" summary="  06장 블로그 기획하고 API 만들기">
+      <option name="closed" value="true" />
+      <created>1713048299648</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713048299648</updated>
+    </task>
+    <task id="LOCAL-00003" summary="  07장 블로그 화면 구성하기">
+      <option name="closed" value="true" />
+      <created>1713656215898</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713656215898</updated>
+    </task>
+    <task id="LOCAL-00004" summary="  서비스 테스트 코드 작성중">
+      <option name="closed" value="true" />
+      <created>1713678600695</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713678600695</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="03장 스프링부트 계층 이해하기" />
+    <MESSAGE value="  06장 블로그 기획하고 API 만들기" />
+    <MESSAGE value="  07장 블로그 화면 구성하기" />
+    <MESSAGE value="  서비스 테스트 코드 작성중" />
+    <option name="LAST_COMMIT_MESSAGE" value="  서비스 테스트 코드 작성중" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/springboot_developer$BlogApiControllerTest.ic" NAME="BlogApiControllerTest Coverage Results" MODIFIED="1713074074550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
