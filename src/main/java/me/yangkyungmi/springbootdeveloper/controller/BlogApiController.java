@@ -1,5 +1,6 @@
 package me.yangkyungmi.springbootdeveloper.controller;
 
+import java.security.Principal;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import me.yangkyungmi.springbootdeveloper.domain.Article;
@@ -25,8 +26,9 @@ public class BlogApiController {
 
   // HTTP 메서드가 POST일 때 전달받은 URL과 동일하면 메서드로 매핑
   @PostMapping("/api/articles")
-  public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request) {
-    Article savedArticle = blogService.save(request);
+  public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request,
+      Principal principal) {
+    Article savedArticle = blogService.save(request, principal.getName());
 
     return ResponseEntity.status(HttpStatus.CREATED)
         .body(savedArticle);

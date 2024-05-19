@@ -4,26 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c510912-9b9e-4fe6-8825-a1b825334efa" name="Changes" comment="  서비스 테스트 코드 작성중">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/jwt/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/jwt/TokenProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/UserApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/UserViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/dto/AddUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/UserDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/config/jwt/JwtFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/config/jwt/TokenProviderTest.java" afterDir="false" />
+    <list default="true" id="7c510912-9b9e-4fe6-8825-a1b825334efa" name="Changes" comment="  서비스 테스트 코드 작성">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/TokenAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/WebOAuthSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/oauth/OAuth2AuthorizationRequestBasedOnCookieRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/oauth/OAuth2SuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/oauth/OAuth2UserCustomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/domain/RefreshToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/repository/RefreshTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/util/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/token.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/oauthLogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/BlogApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/BlogApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/UserViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/UserViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/domain/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/dto/AddArticleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/dto/AddArticleRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/dto/ArticleViewResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/dto/ArticleViewResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/service/BlogServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/service/BlogServiceTest.java" afterDir="false" />
     </list>
@@ -93,8 +100,10 @@
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/6.0.4/4fffcbb7eb4f1e9f1a4c9d3ca60098f7c063fc05/spring-context-6.0.4.jar!/org/springframework/stereotype/Controller.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.0.4/de18e3e75a0e56534d9df5978bd2f43f950e1b4a/spring-web-6.0.4.jar!/org/springframework/web/bind/annotation/RestController.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/build.gradle" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/WebOAuthSecurityConfig.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/config/WebSecurityConfig.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/controller/UserApiController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/repository/RefreshTokenRepository.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/me/yangkyungmi/springbootdeveloper/service/BlogService.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/templates/signup.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/me/yangkyungmi/springbootdeveloper/config/jwt/TokenProviderTest.java" root0="SKIP_INSPECTION" />
@@ -156,6 +165,9 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/resources/img" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -164,7 +176,7 @@
       <recent name="me.yangkyungmi.springbootdeveloper" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BlogServiceTest.testUpdateArticle">
+  <component name="RunManager" selected="Application.SpringBootDeveloperApplication">
     <configuration name="SpringBootDeveloperApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.yangkyungmi.springbootdeveloper.SpringBootDeveloperApplication" />
       <module name="springboot-developer.main" />
@@ -276,8 +288,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BlogServiceTest.testUpdateArticle" />
         <item itemvalue="Application.SpringBootDeveloperApplication" />
+        <item itemvalue="Gradle.BlogServiceTest.testUpdateArticle" />
         <item itemvalue="Gradle.BlogServiceTest.testDeleteArticle" />
         <item itemvalue="Gradle.BlogServiceTest" />
         <item itemvalue="Gradle.BlogServiceTest.testFindAllArticle" />
@@ -332,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713678600695</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="  서비스 테스트 코드 작성">
+      <option name="closed" value="true" />
+      <created>1715603361506</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715603361506</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -342,7 +362,8 @@
     <MESSAGE value="  06장 블로그 기획하고 API 만들기" />
     <MESSAGE value="  07장 블로그 화면 구성하기" />
     <MESSAGE value="  서비스 테스트 코드 작성중" />
-    <option name="LAST_COMMIT_MESSAGE" value="  서비스 테스트 코드 작성중" />
+    <MESSAGE value="  서비스 테스트 코드 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="  서비스 테스트 코드 작성" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/springboot_developer$BlogApiControllerTest.ic" NAME="BlogApiControllerTest Coverage Results" MODIFIED="1713074074550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
